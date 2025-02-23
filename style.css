@@ -19,6 +19,7 @@ header{
     position: sticky;
     top: 0px;
     z-index: 100;
+    backdrop-filter: blur(45px);
 }
 section{
 
