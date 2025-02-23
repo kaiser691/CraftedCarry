@@ -22,7 +22,7 @@ header{
 }
 section{
 
-    background-image: url("CraftedCarryBackground.webp");
+    background-image: url(CraftedCarryBackground.webp);
     background-size:cover;
     background-position: center;
     height: 90vh;
