@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CraftedCarry Paint App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="Logo_Transparent.png" type="image/x-icon">
+        <link rel="stylesheet" href="paintStyle.css">
+        <script src="p5.js"></script>
+    </head>
+    <body>
+
+
+        <div id="toolbar">
+            <a href="index.html"><img id="text-logo"src="textLogo.png" alt="CraftedCarry"></a>
+            <div id="toolContainer">
+                <button class="tool-button" id="brush">Brush</button>
+                <button class="tool-button" id="eraser">Eraser</button>
+                <input type="color" id="colorPicker" class="color-picker" value="#000000">
+                <label for="strokeWeight">Size:</label>
+                <input type="number" id="strokeWeight" value="5" min="1">
+                <button class="tool-button" id="clearCanvas">Clear</button>
+            </div>
+           
+        </div>
+        <div id="canvasContainer"></div>
+        <script src="paint.js"></script>
+    </body>
+</html>

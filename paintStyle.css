@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+#toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+.tool-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(59, 111, 33);
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.tool-button:hover {
+    background-color: #d0d0d0;
+}
+.tool-button.active {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.color-picker {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0;
+    
+}
+#strokeWeight {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#clearCanvas {
+    background-color: rgb(59, 111, 33);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#clearCanvas:hover {
+    background-color: #d32f2f;
+}
+
+#canvasContainer {
+    margin-top: 60px; /* Adjust based on toolbar height */
+}
+
+canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+}
+#text-logo{
+   width: 200px;
+}
+#text-logo:hover{
+    scale: 1.05;
+}
+#toolContainer{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    padding: 0 10px;
+}
+
+@media (max-width: 600px){
+    #toolbar{
+        flex-direction: column;
+        height: 15vh;
+    }
+    #canvasContainer {
+        margin-top: 15vh; /* Adjust based on toolbar height */
+    }
+    #toolContainer{
+        align-items: center;
+        display: flex;
+        gap: 2px;
+        padding: 0 10px;
+    }
+}

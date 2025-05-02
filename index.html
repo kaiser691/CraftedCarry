@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Logo_Transparent.png" type="image/x-icon">
+    <title>CraftedCarry</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8e+z5l5/2z5l5/2z5l5/2z5l5/2z5l5/2z5l5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+
+
+    <script src="p5.js"></script>
+    <script src="buttons.js"></script>
+    <script src="links.js"></script>
+   
+</head>
+<body id="topPage">
+
+
+    
+    <header class="desktop">
+        <a href="PaintApp.html"><img src="Logo_Transparent.png" alt="Logo_Transparent" class="logo" href="PaintApp.html"></a>
+        <img src="textLogo.png" alt="textLogo" class="text-logo" onclick="window.location.href='#topPage'">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <header class="mobile">
+        <div class="topHead">
+            <a href="PaintApp.html"><img src="Logo_Transparent.png" alt="Logo_Transparent" class="logo" href="PaintApp.html"></a>
+            <img src="textLogo.png" alt="textLogo" class="text-logo" onclick="window.location.href='#topPage'">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+   
+   
+
+    <div class="desktop homePage">
+        <img src="ccHomepage.png" alt="homePage" class="homePageImage">
+        <button type="button" onclick="showDon()">Donation</button>
+    </div>
+
+    <div class="mobile homePage">
+        <img src="homePagePortrait.png" alt="homePageImage" class="homePageImage">
+        <button type="button" onclick="showDon()">Donation</button>
+    </div>
+    
+
+
+
+
+    <div class="donateSection">
+        <header class="donateHead">
+            <h2>Donation</h2>
+            <button class="X" onclick="closeDon()">X</button>
+        </header>
+        <div class="donateContent">
+            <p>CraftedCarry, your local tote bag company, is partnering with the community to support Legazpi City's public schools and local government. Donate [amount of money] to CraftedCarry, and we will donate a quality tote bag on your behalf to benefit public school students and local LGU's. Your generosity amplifies our ability to give back and provide practical resources. Join us in making a tangible difference – donate now!</p>
+            <div class="imgContainer">
+                <img src="gcashImg.png" onclick="gcash()" alt="gcash">
+                <img src="paypalImg.jpg" onclick="paypal()" alt="paypal">  
+            </div>
+        </div>
+    </div>
+
+
+    <div class="gcashContainer">
+        <header class="gHead">
+            <h2>GCash</h2>
+            <button class="gX" onclick="gcashClose()">X</button>
+        </header>
+        <div class="gContent">
+            <img src="gcashQR.JPEG" alt="gcashQR" class="gcashQR">
+        </div>
+    </div>
+
+
+
+
+   <section id="about">
+     <h1>About Us</h1>
+     <div class="sectionContainer">
+         <div class="sectionContent" id = "a">
+            <h2>Our Company</h2>
+            <img src="c1.jpg" alt="image 1" class="firstSectionImage">
+            <h3>CraftedCarry is a startup dedicated to providing unique and personalized tote bags. We believe in empowering individuals and businesses to express their creativity and brand identity through custom designs. We are committed to sustainable practices and ethical sourcing, ensuring our products are not only beautiful but also environmentally responsible.</h3>
+         </div>
+
+         <div class="sectionContent" id="b">
+            <h2>Our Mission</h2>
+            <img src="quality.png" alt="image" class="firstSectionImage">
+            <h3>To offer a diverse range of high-quality, customizable tote bags that empower individuals and businesses to express their unique style and brand, while promoting eco-conscious choices.</h3>
+         </div>
+
+         <div class="sectionContent" id="c">
+            <h2>Our Vision</h2>
+            <img src="bag.jpg" alt="bag" class="firstSectionImage">
+            <h3>To be the leading provider of customizable tote bags, recognized for our quality, creativity, and commitment to sustainability.</h3>
+         </div>
+     </div>
+   </section>
+
+   <div class="line"></div>
+
+   <section id="service">
+        <h1>Our Services</h1>
+        <div class="sectionContainer">
+            <div class="sectionContent" id = "a">
+                <h2>Custom Design</h2>
+                <img src="customizableImg.png" alt="image 1" class="firstSectionImage">
+                <h3>We offer a wide range of customizable designs to suit your personal or business needs. Choose from various styles, colors, and materials to create a tote bag that reflects your unique identity.</h3>
+            </div>
+    
+            <div class="sectionContent" id="b">
+                <h2>Quality Materials</h2>
+                <img src="qualityImg.png" alt="image" class="firstSectionImage">
+                <h3>Our tote bags are made from high-quality, eco-friendly materials that are durable and stylish. We prioritize sustainability in our sourcing and production processes.</h3>
+            </div>
+    
+            <div class="sectionContent" id="c">
+                <h2>Fast Shipping</h2>
+                <img src="fastShippingImg.png" alt="bag" class="firstSectionImage">
+                <h3>We understand the importance of timely delivery. Our efficient shipping process ensures that your custom tote bags arrive at your doorstep as quickly as possible.</h3>
+            </div>
+        </div>
+   </section>
+
+   <footer id="contact">
+    <span id="topFoot">
+        <span>
+            <p>Follow us on facebook: CraftedCarry</p>
+            <p>Contact us: 0961 029 3807</p>
+            <p>Email us: sitegore54@gmail.com</p>
+        </span>
+
+        <span id="bottomFoot">
+            <p>STI College Legazpi: Technopreneurship</p>
+            <p>Instructor: Mr. Jhesias Artiaga</p>
+        </span>
+
+        <span>
+            <p id="gm">Group Members:</p>
+            <ul>
+                <li>Kaiser B. Acosta</li>
+                <li>Martin Medollar</li>
+                <li>Allen Bermillo</li>
+                <li>Joana Marie Cobre</li>
+                <li>Ronald N. Red</li>
+            </ul>
+        </span>
+        <span class="mobile">
+            <p class="Disclaimer">Disclaimer: this website is under development!!!</p>
+        </span>
+    </span>
+    <span class="desktop">
+        <p class="Disclaimer">Disclaimer: this website is under development!!!</p>
+    </span>
+    
+    
+   </footer>
+  
+</body>
+</html>
