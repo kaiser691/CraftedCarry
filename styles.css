@@ -357,7 +357,9 @@
        .Disclaimer{
             color: red;
        }
-
+      .redText{
+         color: red;
+      }
 }
 
 @media ((max-width: 1250px) and (min-width: 750px)) or (orientaion: landscape){
@@ -702,6 +704,9 @@
         text-decoration: underline;
     }  
     .Disclaimer{
+        color: red;
+    }
+    .redText{
         color: red;
     }
 }
@@ -1068,6 +1073,9 @@
    }  
    .Disclaimer{
     color: red;
+   }
+   .redText{
+     color: red;
    }
 
 }
